@@ -1,0 +1,18 @@
+# This file store key phrases and responses for sarah chat bot.
+# All lines started with # are comments ignored by the bot.
+# Statements with K are expected input from user.
+# Statements with R are possible responses from the bot
+#
+#
+K "WHAT IS YOUR NAME"
+R "My name is Sarah."
+R "You can call me Sarah."
+R "Why do you want to know my name?"
+#
+K "Hi"
+K "Hello."
+R "Hi there!!!"
+R "Hi How are you?"
+R "Hi!!!"
+R "Hey."
+#
