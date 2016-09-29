@@ -43,7 +43,7 @@ TStrList::~TStrList()
 	}
 }
 
-void TStrList::insert(std::string item)
+TStrListNode* TStrList::insert(std::string item)
 {
 	TStrListNode *aux = first;
 	TStrListNode *newNode;
@@ -64,6 +64,8 @@ void TStrList::insert(std::string item)
 		first->prev = newNode;
 		first = newNode;
 	}
+
+	return newNode;
 }
 
 bool TStrList::isInList(std::string item)

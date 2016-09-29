@@ -5,16 +5,13 @@ class TStrList;
 
 class TStrListNode
 {
+public:
 	TStrListNode *next;
 	TStrListNode *prev;
 	std::string   value;
 
-public:
-
 	TStrListNode();
 	~TStrListNode();
-
-	friend class TStrList;
 };
 
 class TStrList
@@ -27,7 +24,7 @@ public:
 	TStrList();
 	~TStrList();
 
-	void insert		(std::string item);
+	TStrListNode* insert		(std::string item);
 	bool isInList	(std::string item);
 
 	void remove		(std::string item);
