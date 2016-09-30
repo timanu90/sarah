@@ -1,5 +1,7 @@
 #include "includes.h"
 
+extern TRand rand;
+
 //*********************************************************************
 //			NODE ZONE
 
@@ -56,7 +58,7 @@ TStrListNode* TStrList::insert(std::string item)
 
 	if(first == NULL)
 	{
-		first = newNode;
+		first = last = newNode;
 	}
 	else
 	{
@@ -64,18 +66,49 @@ TStrListNode* TStrList::insert(std::string item)
 		first->prev = newNode;
 		first = newNode;
 	}
+	count++;
 
 	return newNode;
 }
 
 bool TStrList::isInList(std::string item)
 {
+	TStrListNode *aux = first;
 
+	while(aux != NULL)
+	{
+		if(aux->value == item)
+		{
+			return true;
+		}
+		aux = aux->next;
+	}
+
+	return false;
 }
 
 void TStrList::remove(std::string item)
 {
 
+}
+
+int lastRand = 0;
+std::string TStrList::getRandomItem()
+{
+	int i = 0;
+	int index;
+	TStrListNode *aux;
+
+	do
+	{
+		index = rand.getRand(count);
+	}while(index == lastRand && count > 1);
+	lastRand = index;					//lastRand prevent same responses
+	
+	aux = first;
+	while(aux != NULL && i++ < index) { aux = aux->next; }
+	
+	return aux->value;
 }
 
 //dbg function

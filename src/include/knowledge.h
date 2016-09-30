@@ -3,8 +3,7 @@
 
 class TKnowledge
 {
-	TStrList strList;
-	TStrList cmdList;
+	TDataBase data;
 
 public:
 	TKnowledge();

@@ -11,6 +11,11 @@ class TFileHandler
 public:
 	TFileHandler();
 	~TFileHandler();
+
+	//std::string getKnowledgeStrType();
+	std::string getKnowledgeStr();
+
+	//std::string getCommandStr();
 };
 
 #endif

@@ -9,6 +9,7 @@
 #include <fstream>							//for files
 
 //application files
+#include "include/rand.h"					//lib to generate rand numbers
 #include "include/datetime.h"				//library that get system time and format it to the bot 
 #include "include/strlist.h"				//linked list that hold all strings
 #include "include/chatlog.h"				//save all bot conversations
@@ -20,7 +21,6 @@
 #include "include/database.h"				// data base structure
 #include "include/knowledge.h"				// dataBase of chatbot knowledge
 #include "include/chatbot.h"				//chatbot main class
-
 
 
 #endif

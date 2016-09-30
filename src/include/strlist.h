@@ -29,6 +29,8 @@ public:
 
 	void remove		(std::string item);
 
+	std::string getRandomItem();
+
 	//dbg function
 	void printList();
 
