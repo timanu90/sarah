@@ -15,9 +15,10 @@
 #include "include/chatlog.h"				//save all bot conversations
 
 #include "include/filehandler.h"			// handle file database read and write
+#include "include/cmdhandlers.h"
 
 											// need here a struct for response 
-#include "include/commandlist.h"			// data structure for commands
+#include "include/command.h"			// data structure for commands
 #include "include/database.h"				// data base structure
 #include "include/knowledge.h"				// dataBase of chatbot knowledge
 #include "include/chatbot.h"				//chatbot main class

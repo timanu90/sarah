@@ -3,16 +3,23 @@
 # Statements with K are expected input from user.
 # Statements with R are possible responses from the bot
 #
-#
+# Need word NODE to tell the bot this section is a new node of information. This was add because of problems in parsing the file
+NODE
 K "WHAT IS YOUR NAME"
 R "My name is Sarah."
 R "You can call me Sarah."
 R "Why do you want to know my name?"
 #
-K "Hi"
-K "Hello."
+NODE
+K "HI"
+K "HELLO"
 R "Hi there!!!"
 R "Hi How are you?"
 R "Hi!!!"
 R "Hey."
+NODE
+K "NIGGA"
+R "SHUT UP!!! Racist mother fucker."
 #
+# FOR FILE INTERPRETATION I NEED A WORD TO TELL THAT THE FILE IS OVER
+END

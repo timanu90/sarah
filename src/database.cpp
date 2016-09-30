@@ -86,7 +86,7 @@ std::string TDataBase::findResponseByKey(std::string key)
 		node = node->next;
 	}
 
-	return "";
+	return "I dont know what you want to say.";
 }
 
 

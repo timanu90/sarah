@@ -3,6 +3,7 @@
 
 class TChatBot
 {
+	TCommand   cmd;
 	TKnowledge know;
 
 public:
