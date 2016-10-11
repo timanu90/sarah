@@ -10,6 +10,21 @@ TChatBot::~TChatBot()
 
 }
 
+std::string __remove_special_char(std::string str)
+{
+	std::string ret = "";
+
+	for(int i=0; i<str.length(); i++)
+	{
+		if(str[i] != '?' && str[i] != '!' && str[i] != ',' && str[i] != '.')
+		{
+			ret += str[i];
+		}
+	}
+
+	return ret;
+}
+
 void TChatBot::botWork()
 {
 	std::string input 		= "";
@@ -20,6 +35,8 @@ void TChatBot::botWork()
 	{
 		std::cout<<"> ";
 		getline(std::cin, input);
+
+		input = __remove_special_char(input);
 
 		if(input != "")
 		{
@@ -38,10 +55,14 @@ void TChatBot::botWork()
 				}
 			}
 		
-			/* Regist bot response in log */
-			log.writeBotResponde(response);
+			if(input != "bye")
+			{
+				/* Regist bot response in log */
+				log.writeBotResponde(response);
 
-			std::cout<<response<<std::endl;
+				std::cout<<response<<std::endl;
+			}
+			
 		}
 		else
 		{
