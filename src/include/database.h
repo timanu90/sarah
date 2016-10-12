@@ -1,6 +1,12 @@
 #ifndef __DATABASE_H__
 #define __DATABASE_H__
 
+/**
+ *	@brief  TDataBase class handle store all strings realtions
+ *	
+ *	This class store and handle string relations to build the bot data base of knowledge.
+ */
+
 class TDataBase;
 
 class TDataNode

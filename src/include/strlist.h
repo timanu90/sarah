@@ -1,6 +1,12 @@
 #ifndef __STRLIST_H__
 #define __STRLIST_H__
 
+/**
+ *	@brief  STRLIST class is a simple linked list class
+ *	
+ *	This class was made to handle all list of strings. It implements list and node in diferent classes.
+ */
+
 class TStrList;
 
 class TStrListNode
